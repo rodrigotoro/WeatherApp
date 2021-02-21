@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#003aa5,#028ae4);
+    color: white;
+}
+
+header {
+    height: 10vh; 
+    padding: 30px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main form input[type=search] { 
+    height: 2rem;
+    padding: 10px;
+}
+
+.weather-card {
+    height: 60%;
+    margin: auto;
+    padding: 0px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8));
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 13, 87);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.location-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 10vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
