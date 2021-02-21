@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('index') }}"><h1>Weather App</h1></a>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Made with ❤️ by the 🐍 team.</p>
+        <p>Copyright © 2021 Rodrigo Toro</p>
+    </footer>
+</body>
+</html>

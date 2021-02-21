@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content%}
+<div class="weather-card">
+    <h2 class="location-header">{{ request.args.location }}</h2>
+    <p class="local-time">Local Time: <strong>{{ localTime }}</strong></p>
+    <p class="weather-item">Weather: <strong>{{ data.weather[0].main }}</strong></p>
+    <p class="weather-item">Temperature: <strong>{{ data.main.temp }} ºC</strong></p>
+    <p class="weather-item">Humidity: <strong>{{ data.main.humidity }}%</strong></p>
+    <p class="weather-item">Pressure: <strong>{{ data.main.pressure }} hPa</strong></p>
+    <p class="weather-item">Wind Speed: <strong>{{ data.wind.speed }} m/s</strong></p>
+</div>
+<script>
+    let data = {{ data | safe }};
+    console.log(data)
+    
+</script>
+{% endblock %}
