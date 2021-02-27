@@ -8,71 +8,68 @@
 
 body {
     height: 100vh;
+    max-width: 1440px;
+    margin: auto;
     background: linear-gradient(#003aa5,#028ae4);
     color: white;
 }
 
 header {
-    height: 10vh; 
-    padding: 30px;
+    background-color: white;
+    color: #003aa5;
+    padding: 30px 30px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    height: 80vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main form {
-    text-align: center;
+header a {
+    color: #003aa5;
+    text-decoration: none;
+}
+
+header form {
+    flex-grow: 2;
+}
+
+.search-bar {
+    width: 60%;
+    min-width: 250px;
+    padding: 10px 20px;
+    border: 2px #003aa5 solid;
+    border-radius: 7px;
+    background-color: #003aa5;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    font: inherit;
+}
+
+.search-bar::placeholder {
+    color: rgb(223, 223, 223);
+}
+
+nav ol{
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
 }
 
-main form input[type=search] { 
-    height: 2rem;
-    padding: 10px;
+.nav-item {
+    font-weight: 300;
+    padding: 0px 20px;
 }
 
-.weather-card {
-    height: 60%;
-    margin: auto;
-    padding: 0px 30px 20px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8));
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(0, 13, 87);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.location-header {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 4rem;
-    margin: 20px;
+.nav-item:hover {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 footer {
-    position: absolute;
     bottom: 0px;
-    width: 100%;
     height: 10vh;
     padding: 20px;
     display: flex;
@@ -80,4 +77,3 @@ footer {
     text-align: center;
     font-size: 0.9rem;
 }
-
